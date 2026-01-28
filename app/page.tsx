@@ -189,14 +189,14 @@ export default function Home() {
             </motion.button>
           )}
 
-          <motion.button
+          {!user && <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={scrollToRecorder}
             className="hidden md:flex px-6 py-2.5 bg-white text-black font-medium text-sm uppercase tracking-wider hover:bg-gray-200 transition-colors"
           >
             Get Started
-          </motion.button>
+          </motion.button>}
         </div>
       </nav>
 
